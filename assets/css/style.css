@@ -3,13 +3,44 @@
   margin: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+header li {
+  padding: 0 20px 0 20px;
+}
+
 .flex-row {
   display: flex;
   border: black 1px solid;
   flex-direction: row;
   align-items: center;
+  padding: 5px;
 }
 
 .flex-row p {
-  padding: 15px;
+  padding: 2px;
+  margin: 5px;
+  max-width: 600px;
+}
+
+.flex-col {
+  display: felx;
+  flex-direction: column;
+  padding: 5px;
+}
+
+section {
+  align-items: center;
+  justify-content: center;
 }

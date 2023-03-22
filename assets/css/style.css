@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-row {
+  display: flex;
+  border: black 1px solid;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-row p {
+  padding: 15px;
+}

@@ -6,7 +6,10 @@
   font-size: 14px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-  background-color: var(--primary-dark);
+}
+
+body {
+  background-color: var(--primary-light);
 }
 
 :root {
@@ -35,7 +38,7 @@
 /* General Styling */
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 ul, li {
@@ -95,27 +98,26 @@ header a:visited {
 /* hero image styling */
 
 .hero {
-  background-color: var(--primary-dark);
+  background-color: var(--primary-light);
   width: 100vw;
   height: 350px;
   align-items: center;
   justify-content: center;
   padding-left: 3rem;
-  border-bottom: .05rem var(--primary-light) solid;
 }
 
 .hero img {
-  border: .5rem var(--primary-light) solid;
-  border-radius: 100%;
-  max-width: 400px;
+  max-height: 350px;
 }
 
 .container {
-  color: var(--white);
+  color: var(--black);
+  text-align: end;
 }
 
 .container span {
   font-size: 2.7rem;
+  font-weight: 700;
 }
 
 .hero h2 {
@@ -125,3 +127,4 @@ header a:visited {
 .hero h3 {
   font-size: 1.5rem;
 }
+

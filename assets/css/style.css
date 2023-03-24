@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--primary-light);
+}
+
 :root {
   --primary: #D5960E;
   --primary-dark: #842A00;
@@ -34,7 +38,7 @@
 /* General Styling */
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 ul, li {
@@ -97,10 +101,30 @@ header a:visited {
   background-color: var(--primary-light);
   width: 100vw;
   height: 350px;
-  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
 }
 
 .hero img {
-  height: 80%;
-  border-radius: 8rem;
+  max-height: 350px;
 }
+
+.container {
+  color: var(--black);
+  text-align: end;
+}
+
+.container span {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero h3 {
+  font-size: 1.5rem;
+}
+

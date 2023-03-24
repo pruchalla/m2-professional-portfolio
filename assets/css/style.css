@@ -17,9 +17,9 @@ body {
   --primary-dark: #842A00;
   --primary-light: #FAE3B2;
 
-  --secondary: #00498D;
-  --secondary-dark: #001426;
-  --secondary-light: #C9E5FF;
+  --secondary: #078f96;
+  --secondary-dark: #005257;
+  --secondary-light: #1fd7e1;
   
   --black: #000000;
   --white: #FFFFFF;
@@ -28,8 +28,8 @@ body {
 /* Animations */
 
 @keyframes buttonHover {
-  from {background-color: var(--primary-dark);}
-  to {background-color: var(--secondary-dark);}
+  from {background-color: var(--secondary-dark);}
+  to {background-color: var(--secondary);}
 
   from {color: var(--white);}
   to {color: var(--white);}
@@ -62,21 +62,25 @@ a:link {
 /* Heading Styling */
 
 header {
-  background-color: var(--primary-dark);
+  background-color: var(--secondary-dark);
   color: var(--white);
   justify-content: start;
   align-items: center;
-  padding: 1rem 8rem;
+  padding: 1rem 13rem;
 }
 
 nav {
   margin-left: auto;
 }
 
+nav .divider-vert {
+  background-color: var(--secondary);
+}
+
 header a {
   display: flex;
   padding: .6rem;
-  margin-right: 1rem;
+  margin: 0 .5rem;
 }
 
 /* nav link styling */
@@ -98,30 +102,45 @@ header a:visited {
 /* hero image styling */
 
 .hero {
-  background-color: var(--primary-light);
+  background-image: url("../images/hero_background.jpg");
+  background-size: cover;
+  background-position: center;
   width: 100vw;
-  height: 350px;
+  height: 40rem;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 3rem;
+  margin-bottom: 4rem;
+}
+
+.bounding-container {
+  background-color: #005257CC;
+  width: 50rem;
+  height: 35rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3em;
 }
 
 .hero img {
-  max-height: 350px;
+  max-height: 25rem;
 }
 
-.container {
-  color: var(--black);
-  text-align: end;
+.hero-style {
+  color: var(--white);
+  text-align: start;
+  max-width: 25rem;
 }
 
-.container span {
+.hero-style span {
   font-size: 2.7rem;
   font-weight: 700;
 }
 
 .hero h2 {
   font-size: 2.5rem;
+  margin-bottom: .5rem;
 }
 
 .hero h3 {
@@ -129,3 +148,39 @@ header a:visited {
 }
 
 /* about me styling */
+
+main {
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+}
+
+.divider-vert {
+  width: .3rem;
+  height: auto;
+  margin: 0 .5rem;
+  background-color: var(--primary-dark);
+  border-radius: 1rem;
+}
+
+section {
+  
+}
+
+.about-me {
+  justify-content: center;
+  align-content: center;
+}
+
+.container-med {
+  max-width: 53rem;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  margin-top: .5rem;
+}
+
+.about-me p {
+  margin-bottom: .5rem;
+}

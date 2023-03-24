@@ -6,6 +6,7 @@
   font-size: 14px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   box-sizing: border-box;
+  background-color: var(--primary-dark);
 }
 
 :root {
@@ -94,13 +95,33 @@ header a:visited {
 /* hero image styling */
 
 .hero {
-  background-color: var(--primary-light);
+  background-color: var(--primary-dark);
   width: 100vw;
   height: 350px;
-  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  border-bottom: .05rem var(--primary-light) solid;
 }
 
 .hero img {
-  height: 80%;
-  border-radius: 8rem;
+  border: .5rem var(--primary-light) solid;
+  border-radius: 100%;
+  max-width: 400px;
+}
+
+.container {
+  color: var(--white);
+}
+
+.container span {
+  font-size: 2.7rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero h3 {
+  font-size: 1.5rem;
 }

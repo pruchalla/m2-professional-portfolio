@@ -35,6 +35,16 @@ body {
   to {color: var(--white);}
 }
 
+@keyframes resumeHover {
+  from {background-color: var(--secondary);}
+  to {background-color: var(--secondary-dark);}
+}
+
+@keyframes workHover {
+  from {filter: brightness(1);}
+  to {filter: brightness(.8);}
+}
+
 /* General Styling */
 
 h1 {
@@ -147,15 +157,13 @@ header a:visited {
   font-size: 1.5rem;
 }
 
-/* about me styling */
+/* main element styling */
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
-  border: red 5px solid;
-  
 }
 
 .right-align {
@@ -164,7 +172,6 @@ main {
   width: max-content;
   justify-content: end;
   align-items: end;
-  border: blue 5px solid;
 }
 
 section {
@@ -175,14 +182,15 @@ section {
   width: .3rem;
   height: auto;
   margin: 0 .5rem;
-  background-color: var(--primary-dark);
+  background-color: var(--secondary);
   border-radius: 1rem;
 }
+
+/* about me styling */
 
 .about-me {
   justify-content: flex-end;
   align-content: center;
-  border: #000000 5px solid;
 }
 
 .container-med {
@@ -203,10 +211,127 @@ section {
 .work {
   display: flex;
   justify-content: flex-end;
-  border: #000000 5px solid;
 }
 
-div.proj-large {
-  border: var(--secondary) solid 5px;
+.work h2 {
+  font-size: 2rem;
+  margin-top: .5rem;
+}
+
+div .proj-large {
   min-width: 53rem;
+  height: 26rem;
+  border: .5rem var(--secondary) solid ;
+  border-radius: .1rem;
+  background-image: url(../images/hero_background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-row {
+  margin-top: .7rem;
+  justify-content: space-between;
+}
+
+div .proj-small {
+  min-width: 26rem;
+  height: 13rem;
+  border: .5rem var(--secondary) solid ;
+  border-radius: .1rem;
+  background-image: url(../images/hero_background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+div .proj-small:hover {
+  filter: brightness(.8);
+  animation: workHover .3s forwards;
+}
+
+div .proj-large:hover {
+  filter: brightness(.8);
+  animation: workHover .3s forwards;
+}
+
+.project-info {
+  background-color: var(--secondary);
+  color: var(--white);
+  width: max-content;
+  padding: 1rem;
+  margin-top: 5%;
+}
+
+
+/* Contact me styling */
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  min-width: 53rem;
+}
+
+.contact-me h2 {
+  font-size: 2rem;
+  margin-top: .5rem;
+}
+
+div .info {
+  padding-right: 5%;
+  min-width: 53rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-me a {
+  color: var(--black);
+}
+
+.contact-me a:hover {
+  color: var(--secondary);
+}
+
+/* Resume Styling */
+
+.resume {
+  display: flex;
+  justify-content: center;
+  min-width: 53rem;
+}
+
+.resume h2 {
+  font-size: 2rem;
+  margin-top: .5rem;
+}
+
+.resume-container {
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 53rem;
+}
+
+button {
+  background-color: var(--secondary);
+  border: none;
+  color: var(--white);
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: var(--secondary-dark);
+  animation: resumeHover .3s forwards;
+}
+
+/* Footer styling */
+
+footer {
+  background-color: var(--secondary-dark);
+  color: var(--white);
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }

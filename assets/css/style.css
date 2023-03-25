@@ -105,7 +105,7 @@ header a:visited {
   background-image: url("../images/hero_background.jpg");
   background-size: cover;
   background-position: center;
-  width: 100vw;
+  width: auto;
   height: 40rem;
   display: flex;
   align-items: center;
@@ -150,9 +150,25 @@ header a:visited {
 /* about me styling */
 
 main {
-  justify-content: flex-end;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: auto;
+  border: red 5px solid;
+  
+}
+
+.right-align {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  justify-content: end;
+  align-items: end;
+  border: blue 5px solid;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 .divider-vert {
@@ -163,13 +179,10 @@ main {
   border-radius: 1rem;
 }
 
-section {
-  
-}
-
 .about-me {
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
+  border: #000000 5px solid;
 }
 
 .container-med {
@@ -183,4 +196,17 @@ section {
 
 .about-me p {
   margin-bottom: .5rem;
+}
+
+/* Work styling */
+
+.work {
+  display: flex;
+  justify-content: flex-end;
+  border: #000000 5px solid;
+}
+
+div.proj-large {
+  border: var(--secondary) solid 5px;
+  min-width: 53rem;
 }
